@@ -32,7 +32,12 @@ while True:
     curr_date = date.today()
 
     # Populate list with returned dict from linker
-    job_arr = [job_dict.get('company'),job_dict.get('job_title'),job_dict.get('location'),curr_date.strftime('%m/%d/%Y'),job_dict.get('level'),job_dict.get('job_url')]
+    job_arr = [job_dict.get('company'),
+               job_dict.get('job_title'),
+               job_dict.get('location'),
+               curr_date.strftime('%m/%d/%Y'),
+               job_dict.get('level'),
+               job_dict.get('job_url')]
 
     # Add row to spreadsheet
     add_row(job_arr)
