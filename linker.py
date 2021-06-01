@@ -51,9 +51,9 @@ def get_linked():
     job_title = job_title_parent.text
 
     # Get parent element for Seniority Level
-    level_parent = result.find('ul', class_='job-criteria__list')
-    level = level_parent.select('span')[0].get_text(strip=True)
+#    level_parent = result.find('ul', class_='job-criteria__list')
+#    level = level_parent.select('span')[0].get_text(strip=True)
 
     # Create array from retreived values
-    job_dict = {'job_title':job_title,'company':company.text,'location':location,'job_url':URL,'level':level}
+    job_dict = {'job_title':job_title,'company':company.text,'location':location,'job_url':URL,'level':'Entry Level'}
     return job_dict
